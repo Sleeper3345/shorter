@@ -1,0 +1,9 @@
+<IfModule dir_module>
+    DirectoryIndex index.php
+
+    RewriteEngine on
+    Options +FollowSymlinks
+    RewriteBase /
+
+    RewriteRule ^([0-9a-zA-Z]+)$ /index.php?link=$1 [NE]
+</IfModule>
